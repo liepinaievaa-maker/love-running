@@ -75,6 +75,7 @@ main {
     background-color: lightblue;
     /*make up the surface*/
     flex: 1 0 auto;
+    margin-top:44px; 
 }
 /* Footer */
 footer {
