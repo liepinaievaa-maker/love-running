@@ -37,6 +37,7 @@ h1{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
+    text-align:center;
 }
 #menu {
     font-size: 110%;
@@ -78,8 +79,17 @@ main {
     margin-top:44px; 
 }
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 /*media query for tablets (768px and up)*/
 @media screen and (min-width: 768px) {
@@ -114,5 +124,4 @@ footer {
 @media screen and (min-width: 992px) {
 #menu a:hover{
     border-bottom:1px solid #3a3a3a;
-}
 }
