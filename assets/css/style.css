@@ -15,9 +15,13 @@ body {
     font-family: 'Roboto'; sans-serif;
 }
 
+
 /*Header*/
 header {
     background-color: lightcoral;
+}
+h1{
+    font-family: 'Poiret One'; sans-serif;
 }
 /* Main */
 main {
