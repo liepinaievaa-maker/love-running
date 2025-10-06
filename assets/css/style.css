@@ -165,6 +165,14 @@ flex-wrap: wrap;
     /*override the h3 set in heading in general styles*/
     color: #fafafa;
 }
+/*gallery styles*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
 
 /* Footer */
 #social-networks {
