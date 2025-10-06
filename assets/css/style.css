@@ -25,14 +25,14 @@ h1, h2, h3 {
 /*Header*/
 header {
     background-color: #ffffff;
-    padding: 0 1rem;
+  padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a3a;
-    display: flex; 
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
     justify-content: space-between;
-    align-items: baseline; 
+    align-items: baseline;
 }
 header a {
     text-decoration: none;
@@ -181,6 +181,19 @@ main {
     main {
         margin-top: 79px;
     }
+    /*Reasons section*/
+    #benefits-physical, #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+     #benefits-physical > div,
+      #benefits-mental > div {
+width:75%;
+     }
+      #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
 }
 /*large devices*/
 @media screen and (min-width: 992px) {
@@ -191,3 +204,38 @@ main {
     display: none;
 }
 }
+
+@media screen and (min-width: 1200px) {
+   /*Reasons section*/
+   #benefits {
+    display:flex;
+    flex-direction: row;
+   }
+
+   #benefits > div {
+    flex: 1;
+   }
+   #benefits-image {
+    order: 0;
+   }
+
+   #benefits-mental {
+    order: 2;
+   }
+
+   #benefits-mental > div {
+    align-self: flex-start;
+   }
+
+   #benefits-physical > div {
+    align-self: flex-end;
+   }
+    }
+ #benefits-physical > div,
+    #benefits-mental > div {
+        width: 45%;
+    }
+    #benefits-mental > div {
+        text-align: start;
+        align-self: flex-start;
+    }
