@@ -140,6 +140,29 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+/*Times*/
+#times {
+background: url('../images/dublin-city.webp') no-repeat center/cover;
+display: flex;
+flex-wrap: wrap;
+}
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /*this will not wrap the screens on 400px wide.each div will expand to fit available row*/
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*creates grid around meet up times*/
+    border: 2px solid white;
+}
+#times h3 {
+    /*override the h3 set in heading in general styles*/
+    color: #fafafa;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -148,6 +171,7 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
@@ -235,7 +259,12 @@ width:75%;
     #benefits-mental > div {
         width: 45%;
     }
-    #benefits-mental > div {
-        text-align: start;
-        align-self: flex-start;
+        #benefits-mental > div {
+            text-align: start;
+            align-self: flex-start;
+        }
     }
+    /* End of 1200px media query */
+    /* End of 992px media query */
+    /* End of 768px media query */
+    
